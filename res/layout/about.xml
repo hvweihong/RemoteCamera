@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#63B8FF" >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0A0A0A"
+        android:text="\n
+作者：hv\n
+时间：2016-01-16\n
+使用说明：\n
+        在两个手机中安装本软件，其中一个先进入云端，作为被控制的手机。\n
+        另外一个进入遥控端，并在wifi中连接上被控制手机即可进行远程控制拍照与实时画面预览。（在控制界面按音量键也可以拍照哦！）\n
+        进入云端的手机将自动打开热点，用于布局一个局域网，控制端连接上之后图像再局域网中传输，将不会消耗您的移动流量，请放心使用！\n
+        如有任何问题可邮件联系作者\n
+        		---hvweihong@foxmail.com"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/my_icon" />
+
+</RelativeLayout>

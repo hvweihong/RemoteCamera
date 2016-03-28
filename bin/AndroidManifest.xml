@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hv.webcam"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+	    <!-- 允许wifi状态权限 -->
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/><!-- 此项在android5.0以下无需添加，5.0以上没添加会导致热点无法开启 -->   
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name ="android.permission.INTERNET"/> 
+	<!-- 相机权限 -->
+	<uses-permission android:name="android.permission.CAMERA"/>
+	<!-- 允许程序录制图像通过手机的摄像头 -->
+	<uses-permission android:name="android.permission.RECORD_VIDEO"/>
+	<!-- 允许程序录制声音通过手机或耳机的麦克 -->
+	<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+	<!-- 写外置SD卡 -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<!-- 获取网络状态-->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> 
+	
+	<uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+	
+	<uses-permission android:name="com.example.permission.RECEIVE_MY_BROADCAST" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" ></uses-permission>
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ControledView"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        
+        <activity
+            android:name="com.hv.view.MyVideo"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        
+        <activity
+            android:name="com.hv.view.MyImageView"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity> 
+         
+     	<activity
+            android:name="com.hv.webcam.About"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity> 
+        <service
+            android:name=".BackgroundService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:theme="@style/perference_set_activity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        
+    </application>
+
+</manifest>

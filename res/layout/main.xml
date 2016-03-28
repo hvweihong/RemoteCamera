@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:padding="16dp" >
+    
+   <LinearLayout
+		     android:layout_weight="1"
+		     android:layout_width="match_parent"
+		     android:layout_height="100dp"
+		     android:layout_alignParentBottom="true"
+		     android:layout_marginBottom="100dp"
+		     android:orientation="horizontal" >
+		
+		        <ImageButton
+		            android:id="@+id/enterSetupBtn"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1"
+		            android:background="#00000000"
+		            android:src="@drawable/enter_setup" 
+		            android:onClick="onImageButtonClick"/>
+		
+		        <ImageButton
+		            android:id="@+id/enterControlerBtn"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1"
+		            android:background="#00000000"
+		            android:src="@drawable/enter_controler" 
+		            android:onClick="onImageButtonClick"/>
+		
+		        <ImageButton
+		            android:id="@+id/enterControledBtn"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1"
+		            android:background="#00000000"
+		            android:src="@drawable/enter_controled" 
+		            android:onClick="onImageButtonClick" />
+	</LinearLayout>
+
+    <ImageButton
+        android:id="@+id/instructionsBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:src="@drawable/instructions" 
+        android:onClick="onImageButtonClick"/>
+
+</RelativeLayout>

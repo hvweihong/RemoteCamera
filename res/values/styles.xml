@@ -1,0 +1,55 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Holo" />
+    
+    <style name="text_18_ffffff">  
+        <item name="android:textSize">18.0dip</item>  
+        <item name="android:textColor">#ffffffff</item>  
+    </style>  
+  
+    <style name="text_16_666666">  
+        <item name="android:textSize">16.0dip</item>  
+        <item name="android:textColor">#ff666666</item>  
+    </style>  
+  
+    <style name="sdw_white">  
+        <item name="android:shadowColor">#7fffffff</item>  
+        <item name="android:shadowDx">0.0</item>  
+        <item name="android:shadowDy">0.65</item>  
+        <item name="android:shadowRadius">1.0</item>  
+    </style>  
+  
+    <style name="sdw_79351b">  
+        <item name="android:shadowColor">#ff79351b</item>  
+        <item name="android:shadowDx">0.0</item>  
+        <item name="android:shadowDy">1.0</item>  
+        <item name="android:shadowRadius">1.0</item>  
+    </style>  
+  
+    <style name="text_15_ffffff_sdw" parent="@style/sdw_79351b">  
+        <item name="android:textSize">15.0dip</item>  
+        <item name="android:textColor">#ffffffff</item>  
+    </style>  
+  
+    <style name="text_15_666666_sdw" parent="@style/sdw_white">  
+        <item name="android:textSize">15.0dip</item>  
+        <item name="android:textColor">#ff666666</item>  
+    </style>  
+  
+    <style name="Dialog" parent="android:style/Theme.Dialog">  
+        <item name="android:background">#00000000</item>  
+        <item name="android:windowBackground">@android:color/transparent</item>  
+        <item name="android:windowNoTitle">true</item>  
+        <item name="android:windowIsFloating">true</item>  
+    </style>  
+    
+    <style name="perference_set_activity">
+		 <item name="android:windowBackground">@drawable/setting_background</item>  <!-- 窗口背景 -->
+		 <item name="android:focusable">false</item>
+		 <item name="android:textColor">#ff000000</item> <!-- 字体颜色 -->
+		 <item name="android:colorBackgroundCacheHint">#00000000</item> <!-- 背景缓存色透明，避免拖动全黑 -->
+		 <item name="android:windowNoTitle">false</item> <!-- 是否有标题 -->
+    </style>
+
+    
+</resources>
