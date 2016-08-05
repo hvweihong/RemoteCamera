@@ -126,6 +126,6 @@ public abstract class SimpleServer implements Runnable {
         ConnectionThread connectionThread = new ConnectionThread(socket);
         mConnectionThreads.add(connectionThread);
         
-        connectionThread.start();
+        connectionThread.start();//
     }
 }
